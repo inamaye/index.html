@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+        table {
+
+            margin-top: 3%;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            width: 75%;
+
+            border-collapse: collapse;
+
+        }
+
+        .center {
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+        th, td {
+
+            border: 1px solid black;
+
+            padding: 8px;
+
+            text-align: center;
+
+        }
+
+        .mergedheading {
+
+            background-color: #6F8FAF;
+
+        }
+
+        .uncentered{
+
+            text-align: left; 
+
+        }
+
+        .idcolumn{
+
+            width: 10%;
+
+        }
+
+        .suppcolumn{
+
+            width: 8%;
+
+        }
+
+        .namecolumn{
+
+            width: 20%;
+
+        }
+
+        .qntycolumn{
+
+            width: 10%;
+
+        }
+
+        .datecolumn{
+
+            width: 12%;
+
+        }
+
+        .imagecolumn{
+
+            width: 12%;
+
+        }
+
+        .redtext{
+
+            color: red;
+
+        }
+
+        .yellow{
+
+            background-color: #FFBF00;
+
+         }
+
+        .gray-row{
+
+            background-color: lightgray;
+
+        }
+</style>
+</head>
+<body>
+<table class='center'>
+<tr class="mergedheading"> 
+<th colspan="6"><b> INVENTORY SYSTEMS</b></th>
+</tr>
+<tr class="grayrow">
+<th class="idcolumn">ID</th>
+<th class="namecolumn">Name</th>
+<th class="qntycolumn">Quantity</th>
+<th class="suppcolumn">Supplier</th>
+<th class="datecolumn">Date</th>
+<th class="imagecolumn">Image</th>
+</tr>
+<tr>
+<td>10001</td>
+<td class="uncentered">Boy Bawang Adobo (pc)</td>
+<td>1000</td>
+<td class="yellow" rowspan="8"> <b>KSK </b> </td>
+<td rowspan="2"> 5/14/2019 </td>
+<td rowspan="8"><img src="https://m.media-amazon.com/images/I/61FElltZAnL._AC_UF894,1000_QL80_.jpg" alt="Image" width="100"></td>
+</tr>
+<tr>
+<td>10002</td>
+<td class="uncentered">Boy Bawang Adobo (pack)</td>
+<td>200</td>
+</tr>
+<tr class="grayrow">
+<td>10003</td>
+<td class="uncentered">Boy Bawang Garlic (pc)</td>
+<td>3000</td>
+<td rowspan="2"> 5/15/2019</td>
+</tr>
+<tr class="grayrow">
+<td>10004</td>
+<td class="uncentered">Boy Bawang Garlic (pack) </td>
+<td class="red-text">150</td>
+</tr>
+<tr>
+<td>10005</td>
+<td class="uncentered">Boy Bawang Spicy (pc)</td>
+<td>4000</td>
+<td rowspan="2"> 5/16/2019</td>
+</tr>
+<tr>
+<td>10006</td>
+<td class="uncentered">Boy Bawang Spicy (pack)</td>
+<td>240</td>
+</tr>
+<tr class="grayrow">
+<td>10007</td>
+<td class="uncentered">Boy Bawang BBQ (pc)</td>
+<td>3000</td>
+<td rowspan="2"> 5/17/2019</td>
+</tr>
+<tr class="grayrow">
+<td>10008</td>
+<td class="uncentered">Boy Bawang BBQ (pack)</td>
+<td>210</td>
+</tr>
+</table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nested List Web Form</title>
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     margin: 40px;
+   }
+   input, textarea {
+     width: 100%;
+     padding: 8px;
+     margin-top: 4px;
+     margin-bottom: 16px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+   button {
+     background-color: #B8B8D0; /* light grayish-purple tone */
+     border: none;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     font-size: 16px;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+   ul {
+     list-style: none;
+     padding-left: 0;
+   }
+   li {
+     margin-bottom: 10px;
+   }
+   .note {
+     font-size: 12px;
+     color: #555;
+   }
+</style>
+</head>
+<body>
+<form>
+<ul>
+<li>
+<label>Your Name*</label>
+<ul>
+<li><input type="text" name="name" required></li>
+</ul>
+</li>
+<li>
+<label>Email*</label>
+<ul>
+<li><input type="email" name="email" required></li>
+</ul>
+</li>
+<li>
+<label>Contact No.*</label>
+<ul>
+<li><input type="tel" name="contact" required></li>
+</ul>
+</li>
+<li>
+<label>Message</label>
+<ul>
+<li><textarea name="message" rows="5"></textarea></li>
+</ul>
+</li>
+<li class="note">required field*</li>
+<li>
+<button type="submit">Send</button>
+</li>
+</ul>
+</form>
+</body>
+</html>
+ 
